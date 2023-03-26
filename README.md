@@ -23,7 +23,7 @@ After you’ve completed the technical analysis for each part, provide a short s
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-![Linear Regression](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Part1_Resources/LinearRegression.PNG)
+![Linear Regression](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegression.PNG)
 
 ![Linear Regression Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegressionSummary.PNG)
 
