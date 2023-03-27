@@ -39,15 +39,15 @@ Summary of Linear Regression:
 ## Summary Statistics on Suspension Coils
 Summary statistics provides a Mean, Median, Variance and Standard Deviations firstly for the entire dataset and secondly per manufacturing lot.  The criteris is the angle of the spoiler and the PSI effect of that angle.
 
-### Specification:
+#### Specification:
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
 
-### Total Summary
+#### Total Summary
 The results of the whole data lot Variance was 62.29356 which would fit clearly under the 100 pounds per square inch specification.
 
 ![Totals Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_TotalSummary.PNG)
 
-### Lot Summary
+#### Lot Summary
 When breaking the data down to individual Manufacture lots however we see something very interesting. Lots 1 and 2 come in very well below the specification at .98 and 7.47 each.   
 
 Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is well over the manufacturing specification of <=100 PSI and definately something that the manufacturing team will want to look into.  
@@ -59,27 +59,27 @@ Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is 
 ## T-Tests on Suspension Coils
 Four t.tests were run initially using the whole sample dataframe vs the population data which had a population mean = 1500 lbs / square inch.
 
-* All data vs population data <br>
+#### All data vs population data <br>
 
 ![Sample T.test](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3SummaryTtest.PNG)
 
     This initial t.test on the entire dataset returned a p-value of .06 which would show ???
     The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
 
-* Lot 1 data vs population data<br>
+#### Lot 1 data vs population data<br>
 ![Lot 1](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot1.PNG)
 
-    Lot 1 results show a p-value of 1, ???
+Lot 1 results show a p-value of 1, ???
 
-* Lot 2 data vs population data <br>
+#### Lot 2 data vs population data <br>
 ![Lot 2](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot2.PNG)
 
-    Lot 2 resutls show a p-value of .06 ???
+Lot 2 resutls show a p-value of .06 ???
 
-* Lot 3 data vs population data <br>
+#### Lot 3 data vs population data <br>
 ![Lot 3](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot3.PNG)
 
-    Lot 3 results show a p-value of .04 ??
+Lot 3 results show a p-value of .04 ??
 ??? This one should be different.  It is under .05 and therefore the lot shows significant difference.
 
 
