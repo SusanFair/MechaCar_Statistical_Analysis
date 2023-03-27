@@ -59,30 +59,29 @@ Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is 
 ## T-Tests on Suspension Coils
 Four t.tests were run initially using the whole sample dataframe vs the population data which had a population mean = 1500 lbs / square inch.
 
-#### All data vs population data <br>
+#### All data vs population data: <br>
 
 ![Sample T.test](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3SummaryTtest.PNG)
 
-    This initial t.test on the entire dataset returned a p-value of .06 which would show ???
-    The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
+This initial t.test on the entire dataset returned a p-value of .06 which would show ???
+The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
 
-#### Lot 1 data vs population data<br>
+#### Lot 1 data vs population data:<br>
 ![Lot 1](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot1.PNG)
 
 Lot 1 results show a p-value of 1, ???
 
-#### Lot 2 data vs population data <br>
+#### Lot 2 data vs population data: <br>
 ![Lot 2](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot2.PNG)
 
 Lot 2 resutls show a p-value of .06 ???
 
-#### Lot 3 data vs population data <br>
+#### Lot 3 data vs population data: <br>
 ![Lot 3](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot3.PNG)
 
 Lot 3 results show a p-value of .04 ??
 ??? This one should be different.  It is under .05 and therefore the lot shows significant difference.
-
-
+<br>
 
 ## Study Design: MechaCar vs Competition
 
