@@ -15,29 +15,42 @@ Design a statistical study to compare vehicle performance of the MechaCar vehicl
 After you’ve completed the technical analysis for each part, provide a short summary of the results in the README.md of the analysis. For the final part, you’ll write up a short description of the study design for additional statistical analysis. In the written summaries, we would like you to think critically about your analysis, not demonstrate proficiency of automotive manufacturing.
 
 ## Linear Regression to Predict MPG
+The following graphics represent the Linear Regression of the MechaCar mpg vs the vehicle length, weight, the spoiler angle, ground clearance and the drive type AWD or non-AWD.
 
+Linear Regression:
+![Linear Regression](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegression.PNG)
+
+Summary of Linear Regression:
+![Linear Regression Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegressionSummary.PNG)
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
+The p-values for Vehicle Length, Vehicle Weight and Ground Clearance all have show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these 3 variable are very close to 0 and therefore well below the .05 benchmark for the Null Hypothosis to be true.
+
 * Is the slope of the linear model considered to be zero? Why or why not?
+The intercept p-value is 5.08e-08 which is 5.08 to the power of 10, meaning it is very close to 0.  
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+Is it reasonable to assume that the linear model is predicting the MechaCar Prototypes accuratly.  We are seeing that some attributes of the car design are affecting the mpg attained and some have no direct or provable relationship to the mpg attained.
 
-![Linear Regression](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegression.PNG)
-
-![Linear Regression Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegressionSummary.PNG)
 
 ## Summary Statistics on Suspension Coils
+Summary statistics provides a Mean, Median, Variance and Standard Deviations firstly for the entire dataset and secondly per manufacturing lot.  The criteris is the angle of the spoiler and the PSI effect of that angle.
+
+### Specification:
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
 
 ### Total Summary
+The results of the whole data lot Variance was 62.29356 which would fit clearly under the 100 pounds per square inch specification.
 
 ![Totals Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_TotalSummary.PNG)
 
 ### Lot Summary
+When breaking the data down to individual Manufacture lots however we see something very interesting. Lots 1 and 2 come in very well below the specification at .98 and 7.47 each.   
+
+Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is well over the manufacturing specification of <=100 PSI and definately something that the manufacturing team will want to look into.  
 
 ![Lot Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_LotSummary.PNG)
-
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 
 ## T-Tests on Suspension Coils
