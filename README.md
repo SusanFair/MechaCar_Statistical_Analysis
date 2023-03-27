@@ -55,6 +55,7 @@ Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is 
 ![Lot Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_LotSummary.PNG)
 
 
+
 ## T-Tests on Suspension Coils
 Four t.tests were run initially using the whole sample dataframe vs the population data which had a population mean = 1500 lbs / square inch.
 
@@ -63,7 +64,7 @@ Four t.tests were run initially using the whole sample dataframe vs the populati
 ![Sample T.test](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3SummaryTtest.PNG)
 
     This initial t.test on the entire dataset returned a p-value of .06 which would show ???
-The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
+    The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
 
 * Lot 1 data vs population data<br>
 ![Lot 1](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot1.PNG)
@@ -82,23 +83,24 @@ The alternative hypoethis is true, the sample mean is not equal to 1500.  The sa
 ??? This one should be different.  It is under .05 and therefore the lot shows significant difference.
 
 
+
 ## Study Design: MechaCar vs Competition
 
 
 
-### Metric(s) to be used for testing
+#### Metric(s) to be used for testing
 What metric or metrics are you going to test?
 
-### Hypothesis
+#### Hypothesis
 Null:
 Alternative
 What is the null hypothesis or alternative hypothesis?
 
-### Test Type
+#### Test Type
 What statistical test would you use to test the hypothesis? And why?
 
 
-### Data 
+#### Data 
 What data is needed to run the statistical test?
 
 
