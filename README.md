@@ -25,13 +25,15 @@ Summary of Linear Regression:
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-The p-values for Vehicle Length, Vehicle Weight and Ground Clearance all have show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these 3 variable are very close to 0 and therefore well below the .05 benchmark for the Null Hypothosis to be true.
+    The p-values for Vehicle Length, Vehicle Weight and Ground Clearance all have show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these 3 variable are very close to 0 and therefore well below the .05 benchmark for the Null Hypothosis to be true.
 
 * Is the slope of the linear model considered to be zero? Why or why not?
-The intercept p-value is 5.08e-08 which is 5.08 to the power of 10, meaning it is very close to 0.  
+
+    The intercept p-value is 5.08e-08 which is 5.08 to the power of 10, meaning it is very close to 0.  
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-Is it reasonable to assume that the linear model is predicting the MechaCar Prototypes accuratly.  We are seeing that some attributes of the car design are affecting the mpg attained and some have no direct or provable relationship to the mpg attained.
+
+    Is it reasonable to assume that the linear model is predicting the MechaCar Prototypes accuratly.  We are seeing that some attributes of the car design are affecting the mpg attained and some have no direct or provable relationship to the mpg attained.
 
 
 ## Summary Statistics on Suspension Coils
@@ -54,30 +56,53 @@ Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is 
 
 
 ## T-Tests on Suspension Coils
+Four t.tests were run initially using the whole sample dataframe vs the population data which had a population mean = 1500 lbs / square inch.
 
+* All data vs population data 
 ![Sample T.test](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3SummaryTtest.PNG)
 
+This initial t.test on the entire dataset returned a p-value of .06 which would show ???
+The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
 
+* Lot 1 data vs population data
 ![Lot 1](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot1.PNG)
 
+Lot 1 results show a p-value of 1, ???
 
-
+* Lot 2 data vs population data 
 ![Lot 2](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot2.PNG)
 
+Lot 2 resutls show a p-value of .06 ???
 
+* Lot 3 data vs population data
 ![Lot 3](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot3.PNG)
+
+Lot 3 results show a p-value of .04 ??
+??? This one should be different.  It is under .05 and therefore the lot shows significant difference.
+
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 
+
+## Metric(s) to be used for testing
 What metric or metrics are you going to test?
 
+## Hypothesis
+Null:
+Alternative
 What is the null hypothesis or alternative hypothesis?
 
+# Test Type
 What statistical test would you use to test the hypothesis? And why?
 
+
+# Data 
 What data is needed to run the statistical test?
+
+
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
 
 
 
