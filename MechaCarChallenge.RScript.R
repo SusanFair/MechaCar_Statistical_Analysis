@@ -13,6 +13,9 @@ MechaData <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaData) #generate multiple linear regression model
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaData)) #generate summary statistics
 
+
+
+
 # Challenge - Part 2
 ####################################
 #Import CSV
@@ -23,6 +26,7 @@ total_summary <- subset(SpoilerData) %>% summarize(Mean=mean(PSI), Median=median
 
 # Lot Summary
 lot_summary <- subset(SpoilerData) %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep')
+
 
 
 # Challenge - Part 3
@@ -39,6 +43,9 @@ filterLot3 <- subset(SpoilerData, Manufacturing_Lot == "Lot3")
 
 t.test(filterLot1$PSI, mu=populationMean)   #pass vector of PSI to compare with population
 t.test(filterLot2$PSI, mu=populationMean)   #pass vector of PSI to compare with population
-t.test(filterLot1$PSI, mu=populationMean)   #pass vector of PSI to compare with population
+t.test(filterLot3$PSI, mu=populationMean)   #pass vector of PSI to compare with population
 
-#t.test(filterLot1 <- (subset(SpoilerData, Manufacturing_Lot == "Lot1")$PSI), mu=populationMean) 
+
+
+
+

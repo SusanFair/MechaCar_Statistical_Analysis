@@ -15,7 +15,7 @@ Design a statistical study to compare vehicle performance of the MechaCar vehicl
 After you’ve completed the technical analysis for each part, provide a short summary of the results in the README.md of the analysis. For the final part, you’ll write up a short description of the study design for additional statistical analysis. In the written summaries, we would like you to think critically about your analysis, not demonstrate proficiency of automotive manufacturing.
 
 ## Linear Regression to Predict MPG
-The following graphics represent the Linear Regression of the MechaCar mpg vs the vehicle length, weight, the spoiler angle, ground clearance and the drive type AWD or non-AWD.
+The following graphics represent the Linear Regression of the MechaCar mpg as it is affected by the vehicle length, weight, the spoiler angle, ground clearance and the drive type AWD or non-AWD.
 
 Linear Regression:<br>
 ![Linear Regression](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegression.PNG)
@@ -25,7 +25,7 @@ Summary of Linear Regression:<br>
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-    The p-values for Vehicle Length, Vehicle Weight and Ground Clearance all have show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these 3 variable are very close to 0 and therefore well below the .05 benchmark for the Null Hypothosis to be true.
+    The p-values for Vehicle Length and Ground Clearance all have show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these variables are very close to 0 and therefore well below the .05 benchmark for the null hypothosis to be true.  However further analysis would be required.  
 
 * Is the slope of the linear model considered to be zero? Why or why not?
 
@@ -33,11 +33,11 @@ Summary of Linear Regression:<br>
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-    Is it reasonable to assume that the linear model is predicting the MechaCar Prototypes accuratly.  We are seeing that some attributes of the car design are affecting the mpg attained and some have no direct or provable relationship to the mpg attained.
+    It is reasonable to assume that the linear model is predicting the MechaCar Prototypes accuratly.  We are seeing that some attributes of the car design are affecting the mpg attained and some have no direct or provable relationship to the mpg attained.  
 
 
 ## Summary Statistics on Suspension Coils
-Summary statistics provides a Mean, Median, Variance and Standard Deviations firstly for the entire dataset and secondly per manufacturing lot.  The criteris is the angle of the spoiler and the PSI effect of that angle.
+Summary statistics provide a Mean, Median, Variance and Standard Deviations firstly for the entire dataset and secondly per manufacturing lot.  The criteria is the angle of the spoiler and the PSI effect of that angle.
 
 #### Specification:
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
@@ -48,46 +48,96 @@ The results of the whole data lot Variance was 62.29356 which would fit clearly 
 ![Totals Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_TotalSummary.PNG)
 
 #### Lot Summary:
-When breaking the data down to individual Manufacture lots however we see something very interesting. Lots 1 and 2 come in very well below the specification at .98 and 7.47 each.   
+When breaking the data down to individual Manufacturing lots however we see something very interesting. Lots 1 and 2 come in very well below the specification at .98 and 7.47 respectively.   
 
-Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is well over the manufacturing specification of <=100 PSI and definately something that the manufacturing team will want to look into.  
+Lot 3 shows a huge amount of variance with a Variance result of 170.29! This is well over the manufacturing specification limit of <=100 PSI and definately something that the manufacturing team will want to look into.  
 
-![Lot Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_LotSummary.PNG)
+![Lot Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part2_LotSummary.PNG)<br>
 
 
 
 ## T-Tests on Suspension Coils
-Four t.tests were run initially using the whole sample dataframe vs the population data which had a population mean = 1500 lbs / square inch.
+Four t.tests were run using the Spoiler data PSI vs the population which had a population mean = 1500 lbs / square inch.
 
 #### All data vs population data: <br>
+This initial t.test on the entire dataset returned a p-value of .06 and a sample mean of 1498.78 which would fit within the 95% confidence level. The p-value is over the .05 threshold for the p-value therefore we cannot reject the null hypothesis.
 
 ![Sample T.test](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3SummaryTtest.PNG)
 
-This initial t.test on the entire dataset returned a p-value of .06 which would show ???
-The alternative hypoethis is true, the sample mean is not equal to 1500.  The sample mean was 1498.78
 
 #### Lot 1 data vs population data:<br>
+Lot 1 results show a p-value of 1 which is over .05.  There is no reason to reject the null hypothesis.  Also the sample mean is 1500 exactly with a 95 % confidence interval.
+
 ![Lot 1](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot1.PNG)
 
-Lot 1 results show a p-value of 1, ???
 
 #### Lot 2 data vs population data: <br>
+Lot 2 results show a p-value of .06 and a sample mean of 1500.2 The p-value is over the .05 threshold for the p-value therefore we cannot reject the null hypothesis. Also the sample mean is 1500.2 with a 95 % confidence interval.
+
 ![Lot 2](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot2.PNG)
 
-Lot 2 resutls show a p-value of .06 ???
+
 
 #### Lot 3 data vs population data: <br>
-![Lot 3](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot3.PNG)
+Lot 3 results show a p-value of .041 which is below the .05 threshold.  The average sample mean wa 1496.14 well below the other lots. We would therefore reject the null hypothesis it shows some significant difference.  Further investigation into this lot will be required to discover the special cause of difference
 
-Lot 3 results show a p-value of .04 ??
-??? This one should be different.  It is under .05 and therefore the lot shows significant difference.
+![Lot 3](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part3Lot3.PNG)
 <br>
 
 ## Study Design: MechaCar vs Competition
+Is MechaCar design the same as their competition or better?
+
+#### Fuel Efficiency
+With the high cost of fuel the cost to drive a car is a key concern.  Can MechaCar beat the competition?
+
+* Metric(s) to be used for testing
+Miles per gallon (mpg) - the difference between the mean values from each dataset
+
+* Hypothesis
+Null: MechaCar (mpg) the same as the competition
+Alternate: MechaCar has a higher miles per gallon than the competition
+
+* Test type
+t.test - test the MechaCar model against a sample of the competitions vehicles
+
+* Data
+Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
+
+#### Fuel Efficiency
+With the high cost of fuel the cost to drive a car is a key concern.  Can MechaCar beat the competition?
+
+* Metric(s) to be used for testing
+Miles per gallon (mpg) - the difference between the mean values from each dataset
+
+* Hypothesis
+Null: MechaCar (mpg) the same as the competition
+Alternate: MechaCar has a higher miles per gallon than the competition
+
+* Test type
+t.test - test the MechaCar model against a sample of the competitions vehicles
+
+* Data
+Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
+
+#### Cost
+With high interest rates customers are looking at the bottom line.  The cost to buy a vehicale can be a decision factor.  Can MechaCar keep up with the competition?
+
+* Metric(s) to be used for testing
+Base cost of the vehicle within a vehicale class.  The difference between the mean values from each dataset
+
+* Hypothesis
+Null: MechaCar cost the same as the competition
+Alternate: MechaCar has a lower base cost than the competition
+
+* Test type
+t.test - test the MechaCar model against a sample of the competitions vehicles
+
+* Data
+Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
 
 
 
-#### Metric(s) to be used for testing
+# Metric
 What metric or metrics are you going to test?
 
 #### Hypothesis
