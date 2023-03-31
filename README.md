@@ -94,7 +94,7 @@ With the high cost of fuel the cost to drive a car is a key concern.  Can MechaC
 Miles per gallon (mpg) - the difference between the mean values from each dataset
 
 * Hypothesis<br>
-Null: MechaCar (mpg) the same as the competition
+Null: MechaCar (mpg) the same as the competition<br>
 Alternate: MechaCar has a higher miles per gallon than the competition
 
 * Test type<br>
@@ -110,7 +110,7 @@ With high interest rates customers are looking at the bottom line.  The cost to 
 Base cost of the vehicle within a vehicale class.  The difference between the mean values from each dataset
 
 * Hypothesis<br>
-Null: MechaCar cost the same as the competition
+Null: MechaCar cost the same as the competition<br>
 Alternate: MechaCar has a lower base cost than the competition
 
 * Test type<br>
@@ -127,7 +127,7 @@ Safety is a key concern of consumers.  With advances in airbags and design techn
 Overall safety rating. Impact of safety features on the safety rating
 
 * Hypothesis<br>
-Null: MechaCar safety rating is the same as the competition
+Null: MechaCar safety rating is the same as the competition<br>
 Alternate: MechaCar has a higher safety rating than the competition
 
 * Test type<br>
