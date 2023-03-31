@@ -17,10 +17,10 @@ After you’ve completed the technical analysis for each part, provide a short s
 ## Linear Regression to Predict MPG
 The following graphics represent the Linear Regression of the MechaCar mpg vs the vehicle length, weight, the spoiler angle, ground clearance and the drive type AWD or non-AWD.
 
-Linear Regression:
+Linear Regression:<br>
 ![Linear Regression](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegression.PNG)
 
-Summary of Linear Regression:
+Summary of Linear Regression:<br>
 ![Linear Regression Summary](https://github.com/SusanFair/MechaCar_Statistical_Analysis/blob/main/Resources/Part1_LinearRegressionSummary.PNG)
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
