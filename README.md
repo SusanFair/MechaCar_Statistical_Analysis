@@ -25,7 +25,7 @@ Summary of Linear Regression:<br>
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-    The p-values for Vehicle Length and Ground Clearance all have show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these variables are very close to 0 and therefore well below the .05 benchmark for the null hypothosis to be true.  However further analysis would be required.  
+    The p-values for Vehicle Length and Ground Clearance show statistical significance.  This would indicate that they could cause a significant affect on the miles per gallon (mpg) of the vehicle.  Each of the p-values in these variables are very close to 0 and therefore well below the .05 benchmark for the null hypothosis to be true.  However further analysis would be required.  
 
 * Is the slope of the linear model considered to be zero? Why or why not?
 
@@ -103,22 +103,6 @@ t.test - test the MechaCar model against a sample of the competitions vehicles
 * Data
 Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
 
-#### Fuel Efficiency
-With the high cost of fuel the cost to drive a car is a key concern.  Can MechaCar beat the competition?
-
-* Metric(s) to be used for testing
-Miles per gallon (mpg) - the difference between the mean values from each dataset
-
-* Hypothesis
-Null: MechaCar (mpg) the same as the competition
-Alternate: MechaCar has a higher miles per gallon than the competition
-
-* Test type
-t.test - test the MechaCar model against a sample of the competitions vehicles
-
-* Data
-Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
-
 #### Cost
 With high interest rates customers are looking at the bottom line.  The cost to buy a vehicale can be a decision factor.  Can MechaCar keep up with the competition?
 
@@ -133,54 +117,23 @@ Alternate: MechaCar has a lower base cost than the competition
 t.test - test the MechaCar model against a sample of the competitions vehicles
 
 * Data
-Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
+Data from MechaCar of the model class under test.  Matching data from the competition cars within the same vehicle class.  Data should only be used for cars within the same industry class e.g.: sub-compact.  This would include physical size within 15% of MechaCar and the same engine size.
 
 
+#### Safety Rating
+Safety is a key concern of consumers.  With advances in airbags and design techniques safety ratings are a big differentiator.
 
-# Metric
-What metric or metrics are you going to test?
+* Metric(s) to be used for testing
+Overall safety rating. Impact of safety features on the safety rating
 
-#### Hypothesis
-Null:
-Alternative
-What is the null hypothesis or alternative hypothesis?
+* Hypothesis
+Null: MechaCar safety rating is the same as the competition
+Alternate: MechaCar has a higher safety rating than the competition
 
-#### Test Type
-What statistical test would you use to test the hypothesis? And why?
+* Test type
+Anova One-Way - test the safety rating of MechaCar model against several competitors vehicles
+Anova Two-Way - test the effect of safety features for MechaCar model and the competition on their safety rating overall
 
+* Data
+Data from MechaCar and the competition showing: Manufacturer, model, safety rating, num of airbags, ABS (Automatics Breaking System), Forward Collision Warning.
 
-#### Data 
-What data is needed to run the statistical test?
-
-
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-
-
-
-
-What is study design in statistics?
-Study design is a process wherein the trial methodology and statistical analysis are organized to ensure that the null hypothesis is either accepted or rejected and the conclusions arrived at reflect the truth
-
-How to design your research in 6 simple steps?
-Step 1: Reflect on your hypothesis. ...
-Step 2: Decide on research approach. ...
-Step 3: Select the type of research design. ...
-Step 4: Define your population and sampling method. ...
-Step 5: Select data collection method. ...
-Step 6: Design your data collection process.
-
-What are the steps in the study design?
-Step 1: Define your variables. You should begin with a specific research question. ...
-Step 2: Write your hypothesis. ...
-Step 3: Design your experimental treatments. ...
-Step 4: Assign your subjects to treatment groups. ...
-Step 5: Measure your dependent variable.
-
-Online material
-Hypothesis Testing in Five Steps
-Regardless of the complexity of the dataset or the proposed question, hypothesis testing uses the same five steps:
-1.	Generate a null hypothesis, its corresponding alternate hypothesis, and the significance level.
-2.	Identify a statistical analysis to assess the truth of the null hypothesis.
-3.	Compute the p-value using statistical analysis.
-4.	Compare p-value to the significance level.
-5.	Reject (or fail to reject) the null hypothesis and generate the conclusion.
