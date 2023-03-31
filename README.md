@@ -90,50 +90,50 @@ Is MechaCar design the same as their competition or better?
 #### Fuel Efficiency
 With the high cost of fuel the cost to drive a car is a key concern.  Can MechaCar beat the competition?
 
-* Metric(s) to be used for testing
+* Metric(s) to be used for testing<br>
 Miles per gallon (mpg) - the difference between the mean values from each dataset
 
-* Hypothesis
+* Hypothesis<br>
 Null: MechaCar (mpg) the same as the competition
 Alternate: MechaCar has a higher miles per gallon than the competition
 
-* Test type
+* Test type<br>
 t.test - test the MechaCar model against a sample of the competitions vehicles
 
-* Data
+* Data<br>
 Data from MechaCar of the model under test.  Matching data from the competition.  Data should only be used for cars with physiscal size within 15% of MechaCar and the same engine size.
 
 #### Cost
 With high interest rates customers are looking at the bottom line.  The cost to buy a vehicale can be a decision factor.  Can MechaCar keep up with the competition?
 
-* Metric(s) to be used for testing
+* Metric(s) to be used for testing<br>
 Base cost of the vehicle within a vehicale class.  The difference between the mean values from each dataset
 
-* Hypothesis
+* Hypothesis<br>
 Null: MechaCar cost the same as the competition
 Alternate: MechaCar has a lower base cost than the competition
 
-* Test type
+* Test type<br>
 t.test - test the MechaCar model against a sample of the competitions vehicles
 
-* Data
+* Data<br>
 Data from MechaCar of the model class under test.  Matching data from the competition cars within the same vehicle class.  Data should only be used for cars within the same industry class e.g.: sub-compact.  This would include physical size within 15% of MechaCar and the same engine size.
 
 
 #### Safety Rating
 Safety is a key concern of consumers.  With advances in airbags and design techniques safety ratings are a big differentiator.
 
-* Metric(s) to be used for testing
+* Metric(s) to be used for testing<br>
 Overall safety rating. Impact of safety features on the safety rating
 
-* Hypothesis
+* Hypothesis<br>
 Null: MechaCar safety rating is the same as the competition
 Alternate: MechaCar has a higher safety rating than the competition
 
-* Test type
+* Test type<br>
 Anova One-Way - test the safety rating of MechaCar model against several competitors vehicles
 Anova Two-Way - test the effect of safety features for MechaCar model and the competition on their safety rating overall
 
-* Data
+* Data<br>
 Data from MechaCar and the competition showing: Manufacturer, model, safety rating, num of airbags, ABS (Automatics Breaking System), Forward Collision Warning.
 
